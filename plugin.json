@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Asanito",
+  "SystemName": "Widgets.CRM.Asanito",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.20" ],
+  "Author": "TeslaCommerce.ir",
+  "DisplayOrder": 1,
+  "FileName": "Tesla.Plugin.Widgets.CRM.Asanito.dll",
+  "Description": "A plugin for recording data in Asanito CRM"
+}
