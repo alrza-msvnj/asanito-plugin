@@ -1,0 +1,87 @@
+﻿@model GoldSettingsModel
+@{
+    //page title
+    ViewBag.Title = T("Telsa.GoldSettings").Text;
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("Widgets.CustomerGoldDirectOrderConfigure");
+}
+
+<form asp-controller="CustomerGoldDirectOrder" asp-action="Configure" method="post">
+    <div class="content-header clearfix">
+        <h1 class="pull-left">
+           تنظیمات طلا
+        </h1>
+        <div class="pull-right">
+            <button type="submit" name="save" class="btn bg-blue">
+                <i class="fa fa-floppy-o"></i>
+                @T("Admin.Common.Save")
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="form-horizontal">
+            <div asp-validation-summary="All"></div>
+
+            <nop-panels id="catalogsettings-panels">
+                <nop-panel asp-name="catalogsettings-search" asp-icon="fa fa-search"
+                           asp-title="تنظیمات طلا" asp-hide-block-attribute-name="goldGeneralSetting"
+                           asp-hide="false" asp-advanced="false">
+                    <div class="panel-body">
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="Enabled" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="Enabled" />
+                                <span asp-validation-for="Enabled"></span>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="DefaultCommission" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="DefaultCommission" />
+                                <span asp-validation-for="DefaultCommission"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="AdditionallWhiteGoldCommission" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="AdditionallWhiteGoldCommission" />
+                                <span asp-validation-for="AdditionallWhiteGoldCommission"></span>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="ColorProductAttributeId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="ColorProductAttributeId" />
+                                <span asp-validation-for="ColorProductAttributeId"></span>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SizeProductAttributeId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="SizeProductAttributeId" />
+                                <span asp-validation-for="SizeProductAttributeId"></span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </nop-panel>
+            </nop-panels>
+        </div>
+    </div>
+</form>

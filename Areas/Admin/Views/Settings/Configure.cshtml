@@ -1,0 +1,126 @@
+@model AsanitoSettingsModel
+
+@{
+    Layout = "_AdminLayout";
+    //page title
+    ViewBag.Title = @T("Tesla.Plugin.Widgets.CRM.Asanito").Text;
+    //active menu item (system name)
+    Html.SetActiveMenuItemSystemName("Tesla.Plugin.Widgets.CRM.Asanito");
+}
+<form asp-controller="Asanito" asp-action="Configure" method="post">
+    <div class="content-header clearfix">
+        <h1 class="pull-left">
+            @T("Tesla.Plugin.Widgets.CRM.Asanito.Configure")
+            <small>
+                <i class="fa fa-arrow-circle-left"></i>
+                <a asp-action="List">@T("Admin.Configuration.Stores.BackToList")</a>
+            </small>
+        </h1>
+        <div class="pull-right">
+            <button type="submit" name="save" class="btn bg-blue">
+                <i class="fa fa-floppy-o"></i>
+                @T("Admin.Common.Save")
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-horizontal">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="Username" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="Username" />
+                                <span asp-validation-for="Username"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="Password" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="Password" />
+                                <span asp-validation-for="Password"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="CustomerCreationTypeId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-select asp-for="CustomerCreationTypeId" asp-items="Model.AvailableCustomerCreationTypes" />
+                                <span asp-validation-for="CustomerCreationTypeId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="InvoiceCreationTypeId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-select asp-for="InvoiceCreationTypeId" asp-items="Model.AvailableInvoiceCreationTypes" />
+                                <span asp-validation-for="InvoiceCreationTypeId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="OrganizationId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="OrganizationId" />
+                                <span asp-validation-for="OrganizationId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="BankAccountId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="BankAccountId" />
+                                <span asp-validation-for="BankAccountId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="OwnerUserId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="OwnerUserId" />
+                                <span asp-validation-for="OwnerUserId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="ProductUnitId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="ProductUnitId" />
+                                <span asp-validation-for="ProductUnitId"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <nop-label asp-for="WarehouseId" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="WarehouseId" />
+                                <span asp-validation-for="WarehouseId"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
