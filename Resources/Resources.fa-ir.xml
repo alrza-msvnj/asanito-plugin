@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language Name="Persian">
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito">
+		<Value>آسانیتو</Value>
+	</LocaleResource>
+	
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.Configure">
+		<Value>تنظیمات آسانیتو</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.Username">
+		<Value>نام کاربری</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.Password">
+		<Value>رمز</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.CustomerCreationTypeId">
+		<Value>زمان ایجاد مشتری</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.AvailableCustomerCreationTypes.Registration">
+		<Value>بعد از ثبت نام</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.AvailableCustomerCreationTypes.PlaceOrder">
+		<Value>بعد از ثبت سفارش</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.InvoiceCreationTypeId">
+		<Value>زمان ایجاد فاکتور</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.AvailableInvoiceCreationTypes.OrderPlaced">
+		<Value>بعد از ثبت سفارش</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.AvailableInvoiceCreationTypes.OrderPaid">
+		<Value>بعد از پرداخت سفارش</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.OrganizationId">
+		<Value>شناسه سازمان</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.BankAccountId">
+		<Value>شناسه حساب بانکی</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.OwnerUserId">
+		<Value>شناسه مالک</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.ProductUnitId">
+		<Value>شناسه واحد شمارش محصول</Value>
+	</LocaleResource>
+
+	<LocaleResource Name="Tesla.Plugin.Widgets.CRM.Asanito.AsanitoSettingsModel.WarehouseId">
+		<Value>شناسه انبار</Value>
+	</LocaleResource>
+</Language>
